@@ -1,0 +1,136 @@
+body{
+  margin: 0;
+  width: 350px;
+  border-radius: 15%;
+  height: auto;
+}
+
+
+.container {
+
+  position: relative;
+  overflow: clip;
+}
+
+.select-section {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#lang-dropdown {
+  max-height: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+
+}
+
+#voice-dropdown {
+   margin: 5px;
+   width: 100px;
+   border-radius: 5px;
+   border: none;
+}
+
+option{
+  text-align: center;
+  font-family: "Verdana", sans-serif;
+    }
+
+.upper-container {
+  background-image: linear-gradient(to top, #ffffff, #3FDECF);
+  padding-bottom: 15px;
+
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.app-logo {
+  height:40px;
+}
+.app_name{
+  color: white;
+  font-size: 10px;
+  font-family: "Verdana", sans-serif;
+}
+.select-section {
+  text-align: center;
+}
+
+.input-section {
+  padding: 20px;
+}
+
+.user-input {
+  background-image: linear-gradient( 174.2deg,  rgba(194,233,231) 7.1%, rgb(255, 255, 255) 67.4% );
+box-shadow: rgb(193, 221, 223) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  width: 100%;
+  min-height: 150px;
+  max-width: 100%;
+  overflow-y: scroll;
+  border-radius: 5px;
+  border: 0px;
+
+}
+
+.submit-section {
+  position: relative;
+  overflow: clip;
+  padding-top: 10px;
+
+}
+
+#errorMsg{
+  position: absolute;
+  left:10px;
+  bottom:10px;
+}
+
+#submit-btn {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  transition: transform 1s;
+  width: 80px;
+  z-index: 1;
+}
+
+#QQ{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+#submit-btn:hover {
+  transform: rotateZ(180deg) scale(250%);
+}
+
+
+#submit-btn:hover + #QQ{
+  opacity: 1;
+  transition: opacity 0.3s 0.5s;
+  z-index: 1;
+}
+
+
+.errorMsg{
+  color: red;
+  padding: 20px;
+  font-family: "Verdana", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+#hidden-height{
+  visibility: hidden;
+}

@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   width: 350px;
   border-radius: 15%;
@@ -28,16 +28,16 @@ body{
 }
 
 #voice-dropdown {
-   margin: 5px;
-   width: 100px;
-   border-radius: 5px;
-   border: none;
+  margin: 5px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
 }
 
-option{
+option {
   text-align: center;
   font-family: "Verdana", sans-serif;
-    }
+}
 
 .upper-container {
   background-image: linear-gradient(to top, #ffffff, #3FDECF);
@@ -52,13 +52,15 @@ option{
 }
 
 .app-logo {
-  height:40px;
+  height: 40px;
 }
-.app_name{
+
+.app_name {
   color: white;
   font-size: 10px;
   font-family: "Verdana", sans-serif;
 }
+
 .select-section {
   text-align: center;
 }
@@ -68,8 +70,8 @@ option{
 }
 
 .user-input {
-  background-image: linear-gradient( 174.2deg,  rgba(194,233,231) 7.1%, rgb(255, 255, 255) 67.4% );
-box-shadow: rgb(193, 221, 223) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  background-image: linear-gradient(174.2deg, rgba(194, 233, 231) 7.1%, rgb(255, 255, 255) 67.4%);
+  box-shadow: rgb(193, 221, 223) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   width: 100%;
   min-height: 150px;
   max-width: 100%;
@@ -86,10 +88,10 @@ box-shadow: rgb(193, 221, 223) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -
 
 }
 
-#errorMsg{
+#errorMsg {
   position: absolute;
-  left:10px;
-  bottom:10px;
+  left: 10px;
+  bottom: 10px;
 }
 
 #submit-btn {
@@ -101,7 +103,7 @@ box-shadow: rgb(193, 221, 223) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -
   z-index: 1;
 }
 
-#QQ{
+#readOut {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -116,14 +118,14 @@ box-shadow: rgb(193, 221, 223) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -
 }
 
 
-#submit-btn:hover + #QQ{
+#submit-btn:hover+#readOut {
   opacity: 1;
   transition: opacity 0.3s 0.5s;
   z-index: 1;
 }
 
 
-.errorMsg{
+.errorMsg {
   color: red;
   padding: 20px;
   font-family: "Verdana", sans-serif;
@@ -131,6 +133,6 @@ box-shadow: rgb(193, 221, 223) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -
   line-height: 12px;
 }
 
-#hidden-height{
+#hidden-height {
   visibility: hidden;
 }

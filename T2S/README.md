@@ -1,6 +1,6 @@
 # Chrome Extension - Text To Speech (T2S)
 
-![Text To Speech - Pop-up Window](./pop-up-window-interface.png)
+![Text To Speech - Pop-up Window](./readme_elements/pic/pop-up-window-interface.png)
 
 The Chrome Extension - Text To Speech (T2S) is a powerful tool that allows users to convert text into speech. Users can input text and choose their preferred language and voice for the speech output. Additionally, the extension provides a convenient way to read out text content on websites by simply highlighting the desired text and selecting the option from the right-click menu.
 
@@ -24,13 +24,13 @@ To install the T2S, you can follow these steps:
 
 ## Usage
 
-Please refer to the [Usage Guide](.Usage-guide.md) for detailed instructions on how to use the extension effectively.
+Please refer to the [Usage Guide](./readme_elements/USAGE.md) for detailed instructions on how to use the extension effectively.
 
 ## Features
 
 - Convert user-inputted text into speech using the chosen language and voice.
 - Read out text content on websites by highlighting and selecting the option from the right-click menu.
-![Text To Speech - Context Menu](./context-menu-interface.png)
+![Text To Speech - Context Menu](./readme_elements/pic/context-menu-interface.png)
 
 ## Configuration
 
@@ -46,7 +46,7 @@ Contributions to the T2S project are welcome! If you encounter any bugs, have fe
 
 ## License
 
-This Chrome extension is released under the [MIT License](./LICENSE.md).
+This Chrome extension is released under the [MIT License](./readme_elements/LICENSE.md).
 
 ## Contact and Support
 

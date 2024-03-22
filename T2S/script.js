@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
       voiceDrpDwn = document.getElementById("voice-dropdown")
       langDrpDwn.addEventListener("change", function() {
         x = langDrpDwn.options[langDrpDwn.selectedIndex].value;
-        if (x === "Language"){
+        if (x === "Language") {
           languageChoice = undefined;
           voiceDrpDwn.innerHTML = "<option>Voice</option>";
-          }
-        else{
+        }
+        else {
           languageChoice = '&hl=' + ((Object.values(data[x].LanguageCode)).join(''));
           //Get list of voices of the language and show drop-down menu
           Object.values(data[x].Voice.Female).forEach((el) => {
@@ -64,9 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const inputArea = document.getElementById("text-input");
       let textInput;
       inputArea.addEventListener("input", (event) => {
-        x =encodeURIComponent(event.target.value);
-        if (x === '') {textInput= undefined} else
-        textInput = '&src=' + x ;
+        x = encodeURIComponent(event.target.value);
+        if (x === '') { textInput = undefined } else
+          textInput = '&src=' + x;
         return textInput;
       })
       //fetch whole api link with variables by clicking submit-btn
@@ -77,22 +77,22 @@ document.addEventListener('DOMContentLoaded', function() {
       speakBtn.addEventListener("click", function() {
         audioContainer.innerHTML = '';
         audioContainer.appendChild(errorMsgBox);
-        console.log(languageChoice,voiceChoice,textInput);
-        if (languageChoice === undefined ){
+        console.log(languageChoice, voiceChoice, textInput);
+        if (languageChoice === undefined) {
           errorMsgBox.textContent = "Please select a language";
-        } else if (textInput  === undefined ){
+        } else if (textInput === undefined) {
           errorMsgBox.textContent = "Please input text";
         } else {
-            let newUrl = `${urlSt}${apiKey}${languageChoice}${voiceChoice}${textInput}`;
-            console.log(newUrl);
-            errorMsgBox.textContent = '';
-            // create audio element, show as hidden + auto play attribute + delete after   play
-            x = document.createElement("AUDIO");
-            x.autoplay = true;
-            x.src = newUrl;
-            audioContainer.appendChild(x)
-          }
-        })
+          let newUrl = `${urlSt}${apiKey}${languageChoice}${voiceChoice}${textInput}`;
+          console.log(newUrl);
+          errorMsgBox.textContent = '';
+          // create audio element, show as hidden + auto play attribute + delete after   play
+          x = document.createElement("AUDIO");
+          x.autoplay = true;
+          x.src = newUrl;
+          audioContainer.appendChild(x)
+        }
+      })
     })
     .catch(err => { console.error('Error reading or parsing JSON:', err); });
 });
